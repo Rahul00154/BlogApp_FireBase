@@ -1,6 +1,6 @@
 import React from "react";
 import { auth, provider } from "../config/firebase";
-import { signInWithPopup} from "firebase/auth";
+import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 function Login({ setIsAuth }) {
@@ -17,7 +17,7 @@ function Login({ setIsAuth }) {
   };
 
   return (
-    <div className="">
+    <div className="login-container">
       <p>SignIn With Google</p>
       <button className="login-with-google-btn" onClick={signInwithGoogle}>
         SingnIn with Google

@@ -31,7 +31,7 @@ a {
   width: 80%;
   max-width: 500px;
   padding: 20px;
-  background-color: #444;
+  background-color: #333;
   border-radius: 12px;
   color: white;
   display: flex;
@@ -60,6 +60,12 @@ a {
   border-radius: 5px;
   padding: 12px;
   margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.inputGp input:focus,
+.inputGp textarea:focus {
+  border-color: #61dafb;
 }
 
 .inputGp button {
@@ -93,7 +99,33 @@ a {
   display: flex;
 }
 
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container p {
+  margin-top: 18rem;
+  text-align: center;
+  color: red;
+}
+
 .login-with-google-btn {
+  padding: 8px;
+  width: 160px;
+  background-color: #48a8f2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-with-google-btn:hover {
+  background-color: #007bb6;
 }
 
 .logout-btn {
@@ -150,4 +182,24 @@ a {
   overflow-y: auto;
   font-size: 1.1rem;
   color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .cpContainer {
+    width: 90%;
+  }
+
+  .inputGp input,
+  .inputGp textarea {
+    width: 100%;
+  }
+
+  .login-container p {
+    margin-top: 6rem;
+  }
+
+  .logout-btn {
+    padding: 8px 14px;
+  }
 }
