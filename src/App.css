@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8;
+}
+
+nav {
+  height: 80px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.createPostPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpContainer {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #444;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cpContainer h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #61dafb;
+}
+
+.cpContainer label {
+  font-size: 1.2rem;
+}
+
+.inputGp {
+  margin-top: 20px;
+}
+
+.inputGp input,
+.inputGp textarea {
+  font-size: 1.1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.inputGp button {
+  margin-top: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: #61dafb;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.inputGp button:hover {
+  background-color: #48a8f2;
+}
+
+.loginPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginPage p {
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  display: flex;
+}
+
+.login-with-google-btn {
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 12px 20px;
+}
+
+.homePage .post {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.homePage .post:hover {
+  transform: scale(1.02);
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.postHeader .title {
+  flex: 70%;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.postHeader .deletePost button {
+  font-size: 1.2rem;
+  color: #d9534f;
+  transition: color 0.3s ease;
+}
+
+.postHeader .deletePost button:hover {
+  color: #c9302c;
+}
+
+.postTextContainer {
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+  font-size: 1.1rem;
+  color: #555;
+}
