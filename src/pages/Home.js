@@ -36,8 +36,13 @@ function Home({ isAuth }) {
   }, []);
 
   const deletePost = async (id) => {
-    const postDoc = doc(db, "posts", id);
-    await deleteDoc(postDoc);
+    try {
+      const postDoc = doc(db, "posts", id);
+      await deleteDoc(postDoc);
+    } catch (error) {
+      console.log(error);
+      return error;
+    }
   };
 
   // const updatePost = async (post, id) => {
